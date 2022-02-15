@@ -49,6 +49,13 @@ public class TableTest2_CommonApi {
                 .build();
         TableEnvironment blinkBatchTableEnv = TableEnvironment.create(blinkBatchSettings);
 
+        //2.表的创建：连接外部系统，读取数据
+        //2.1读取文件
+        String inputPath = TableTest1_Example.class.getClassLoader().getResource("sensor.txt").getPath();
+
+
+
+
 
     }
 }
