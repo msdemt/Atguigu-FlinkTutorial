@@ -11,16 +11,10 @@ public class User {
     private String fjh;
     private String je;
     private String se;
+    private String slv;
     private String kprq;
 
     public User() {
-    }
-
-    public User(String nsrsbh, String fjh, String je, String se) {
-        this.nsrsbh = nsrsbh;
-        this.fjh = fjh;
-        this.je = je;
-        this.se = se;
     }
 
     public String getNsrsbh() {
@@ -55,11 +49,31 @@ public class User {
         this.se = se;
     }
 
+    public String getSlv() {
+        return slv;
+    }
+
+    public void setSlv(String slv) {
+        this.slv = slv;
+    }
+
     public String getKprq() {
         return kprq;
     }
 
     public void setKprq(String kprq) {
         this.kprq = kprq;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "nsrsbh='" + nsrsbh + '\'' +
+                ", fjh='" + fjh + '\'' +
+                ", je='" + je + '\'' +
+                ", se='" + se + '\'' +
+                ", slv='" + slv + '\'' +
+                ", kprq='" + kprq + '\'' +
+                '}';
     }
 }
